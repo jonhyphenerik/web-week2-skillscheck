@@ -26,7 +26,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    min-height: 100vw;
 }
 ol, ul {
 	list-style: none;
@@ -107,14 +108,14 @@ header{
 
 #caption{
     color: black;
-    font-size: 9px;
+    font-size: 12px;
     width: 250px;
     margin: 5vw
 }
 
 #elephant{
-    height:90px;
-    width:150px;
+    height:180px;
+    width: calc(5/3*180px);
     margin: 5vw
 }
 
@@ -126,6 +127,8 @@ header{
 #bottom{
     justify-content: space-between;
     height: 75px;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 footer{
