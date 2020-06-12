@@ -103,7 +103,8 @@ let bigOrSmall = arr => {
 function arrayReverser(arr){
 	let reversed = [];
 	for(let i=arr.length-1; i>=0; i--){
-		reversed.pop(arr[i])
+		console.log(arr[i]);
+		reversed.push(arr[i])
 	}
 	return reversed
 }
@@ -134,14 +135,14 @@ let total = myNumbers.reduce((a,b)=>a+b);
 // Finally, use .forEach to find the index of each item in the array. To begin, create an empty array called 'myNumbersIndex'. Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array. 
 
 let myNumbersIndex = [];
-myNumbers.forEach(element => myNumbersIndex.push())
-
+let i=0;
+myNumbers.forEach(element => {myNumbersIndex.push(i); i++})
 
 
 //////////////////PROBLEM 18////////////////////
 
 // Did you know that George Foreman has five sons named George? Go ahead and change everyone's name in the notGeorge array to George using .map. Store the resulting array in a variable named 'forTheLoveOfGeorge'.
-const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
+const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela'];
 
 let forTheLoveOfGeorge = notGeorge.map(item=>'George');
 
@@ -163,4 +164,5 @@ let enemies = people.filter(person=>!person.friend);
 
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
 
-
+let totallyAwesome = people.map(item=>item.awesomeLevel).reduce((total, curEl)=>total+curEl);
+// why doesn't this work?: people.reduce((total, curEl)=>total+curEl.awesomeLevel);
