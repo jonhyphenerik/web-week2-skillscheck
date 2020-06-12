@@ -2,19 +2,19 @@
 
 // Create a variable called 'myName' with a value that is your name. 
 
-var myName = "Jon-Erik";
+let myName = "Jon-Erik";
 
 //////////////////PROBLEM 2////////////////////
 
 // Create a variable called 'faveNum' with a value that is your favorite number. 
 
-var faveNum = 666;
+let faveNum = 666;
 
 //////////////////PROBLEM 3////////////////////
 
 // Create a variable called 'lovesCode' and assign it a value of true.
 
-var lovesCode = true;
+let lovesCode = true;
 
 //////////////////PROBLEM 4////////////////////
 
@@ -46,7 +46,7 @@ let oddChecker = num => num%2===1;
 
 // Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. Have the function take the two parameters and return a string that says "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 
-let iLove = (name, love) => `${name} loves ${love}`
+let iLove = (name, love) => `${name} loves ${love}`;
 
 //////////////////PROBLEM 8////////////////////
 
